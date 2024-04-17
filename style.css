@@ -3,9 +3,9 @@
     src: url(Fontd/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 
-:root{
-    --roxo-gamifica:#47208b;
-    --laranja-gamifica:#f06638;
+:root {
+    --roxo-gamifica: #47208b;
+    --laranja-gamifica: #f06638;
 }
 
 /* Reset CSS*/
@@ -109,7 +109,7 @@ h2 {
 }
 
 #cases {
-    text-align: center;  
+    text-align: center;
 
     padding-bottom: 100px;
     margin-bottom: 100px;
@@ -187,39 +187,125 @@ h2 {
     transition: background-color 500ms;
 }
 
-.card button:hover{
+.card button:hover {
     background-color: #ad4929;
-    
+
 }
-  #portfolio{
+
+#portfolio {
     height: 250px;
     background-image: url(img/depositphotos_82602244-stock-illustration-isometric-pixel-art-characters\ 1.png);
     background-size: 250px;
     background-attachment: fixed;
 
     position: relative;
-  }   
-    .filtro{
-        width: 100%;
-        height: 100%;
-        background-color: #47208bc2;
 
-        position: absolute;
-        top: 0px;
-        z-index: 0;
-        ;
-    }
+    margin-bottom: 120px;
+}
 
-    #portfolio .container-grid{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    #portfolio a{
-        color: white;  
+.filtro {
+    width: 100%;
+    height: 100%;
+    background-color: #47208bc2;
 
-        font-family: "Anta";
-        font-size: 28px;
-        z-index:1;
-    }
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+    ;
+}
+
+#portfolio .container-grid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#portfolio a {
+    width: fit-content;
+    color: white;
+
+    font-family: "Anta";
+    font-size: 28px;
+    z-index: 1;
+    transition: 200ms;
+}
+
+#portfolio a:hover {
+    transform: scale(1.05);
+    transition: 200ms;
+}
+
+#contato {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+
+}
+
+#contato h2 {
+    margin-bottom: 70px;
+}
+
+#contato form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 80px;
+    background-color: var(--roxo-gamifica);
+    color: white;
+    font-family: "Montserrat";
+    font-size: 17px;
+}
+
+
+.campo label{
+    text-align: left;
+}
+.campo{
+    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+
+.campo-descricao{
+    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.campo input{
+    height: 40px;
+    color: white;
+    background-color: #351868;
+    border: none;
+    border-radius: 4px;
+
+    outline: none;
+}
+.campo-descricao textarea{
+    color: white;
+    background-color: #351868;
+    border: none;
+    border-radius: 4px;
+
+    outline: none;
+
+    padding: 10px;
+
+    resize: none;
+}
+
+.campo label, .campo-descricao label{
+    margin-bottom: 15px;
+
+}
