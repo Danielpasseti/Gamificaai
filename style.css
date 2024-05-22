@@ -26,11 +26,43 @@
 .banner {
     height: 100vh;
 
-    background-image: linear-gradient(90deg, rgba(53, 24, 104, 1) 0%, rgba(53, 24, 104, 0.8) 100%), url(img/bg-room.png);
     background-repeat: no-repeat;
-    background-position: 100%, 40%
+    background-position: 165%, 40%;
+    position: realtive;
+
+    
 
 }
+
+.primeiro-banner{
+    background-image: linear-gradient(90deg, rgba(53, 24, 104, 1) 0%, rgba(53, 24, 104, 0.8) 100%), url(img/bg-room.png);
+
+}
+
+.segundo-banner{
+    background-image: linear-gradient(90deg, rgb(255, 31, 154) 0%, rgba(53, 24, 104, 0.8) 100%), url(img/bg-room.png);
+
+}
+
+.terceiro-banner{
+    background-image: linear-gradient(90deg, rgba(53, 24, 104, 1) 0%, rgba(53, 24, 104, 0.8) 100%), url(img/bg-room.png);
+
+}
+
+#botao-voltar, #botao-proximo{
+    width: 30px;
+
+    border: none;
+    cursor: pointer;
+}
+#botao-voltar, #botao-proximo svg{
+    fill: #ffffff76;
+}
+
+#botao-voltar{
+
+}
+
 
 header {
     height: 165px;
@@ -446,6 +478,10 @@ footer .container-grid {
 /* Animação do banner */
 
 .menu-fechado{
+    display:none;
+}
+
+#icone-barras{
     display:none;
 }
 
